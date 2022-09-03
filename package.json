@@ -1,0 +1,43 @@
+{
+  "name": "resolve-object-path",
+  "version": "1.0.0",
+  "description": "A TypeScript function that resolves a string path to an object's property.",
+  "main": "dist/index.min.js",
+  "files": [
+    "dist/*"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "npm run build && npx jasmine",
+    "start": "ts-node-dev --respawn src/index.ts",
+    "build": "rmdir /s /Q dist & tsc && terser dist/index.js --output dist/index.min.js --config_file terserconfig.json --comments /^\\*\\n/"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3",
+    "@types/jasmine": "^4.0.3",
+    "jasmine": "^4.1.0",
+    "jasmine-ts-console-reporter": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joker876/resolve-object-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joker876/resolve-object-path/issues"
+  },
+  "homepage": "https://github.com/joker876/resolve-object-path#readme",
+  "keywords": [
+    "resolve",
+    "object",
+    "resolve",
+    "object",
+    "path",
+    "object",
+    "path",
+    "resolve",
+    "path"
+  ],
+  "author": "joker876",
+  "license": "MIT"
+}
