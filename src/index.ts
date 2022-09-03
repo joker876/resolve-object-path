@@ -5,6 +5,12 @@ const _STRING_PROP_REGEXP = new RegExp(/^([\w$]+)/.source + _PATH_NEXT_STEPS_REG
 // https://regexr.com/6t8ru
 const _ARRAY_PROP_REGEXP = new RegExp(/^\[(?:(-?\d+(?:\.\d+)?)|(['"`])(.*?)\2)\](?=\??\.|\[(?:(?:-?\d+(?:\.\d+)?)|(['"`]).*?\4)|$)/.source + _PATH_NEXT_STEPS_REGEXP);
 
+/**
+ * Gets a value from an object by following a string path
+ * @param object the object to get the value from
+ * @param path the path to the value in the object
+ * @returns the value the path was pointing to, or undefined if the value was not found using the path
+ */
 function resolvePath(object: object, path: string) {
     if (typeof object != 'object') throw new TypeError('Expected object argument to be an object, got ' + typeof object);
     if (typeof path != 'string') throw new TypeError('Expected path argument to be a string, got '+ typeof path);
