@@ -6,7 +6,7 @@ A simple TypeScript utility function for getting a value from an object by follo
 
 ## Highlights
 * Supports TypeScript!
-* Full JSX documentation
+* Full JSDoc documentation
 * Very lightweight (~1.6kB of actual code!)
 
 ## Installation
