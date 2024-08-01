@@ -1,4 +1,4 @@
-import resolvePath from './index';
+import { resolvePath } from './index';
 
 const testObj = {
     foo: 'abc',
