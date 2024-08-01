@@ -2,7 +2,7 @@
   "name": "resolve-object-path",
   "version": "1.1.2",
   "description": "A TypeScript function that resolves a string path to an object's property.",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "files": [
     "dist/*"
   ],
