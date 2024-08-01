@@ -10,7 +10,10 @@
   "scripts": {
     "test": "npm run build && npx jasmine",
     "start": "ts-node-dev --respawn src/index.ts",
-    "build": "rmdir /s /Q dist & tsc && terser dist/index.js --output dist/index.min.js --config_file terserconfig.json --comments /^\\*\\n/"
+    "build": "rmdir /s /Q dist & tsc",
+    "build-web": "npm run build && npm exec webpack",
+    "npm-publish": "npm run build && npm publish",
+    "deploy": "npm run build-web && gh-pages -d dist/browser"
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.8",
