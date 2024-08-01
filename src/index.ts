@@ -11,7 +11,7 @@ const _ARRAY_PROP_REGEXP = new RegExp(/^\[(?:(-?\d+(?:\.\d+)?)|(['"`])(.*?)\2)\]
  * @param path the path to the value in the object
  * @returns the value the path was pointing to, or undefined if the value was not found using the path
  */
-function resolvePath(object: object, path: string) {
+export function resolvePath(object: object, path: string) {
     if (typeof object != 'object') throw new TypeError('Expected object argument to be an object, got ' + typeof object);
     if (typeof path != 'string') throw new TypeError('Expected path argument to be a string, got '+ typeof path);
 
@@ -58,5 +58,3 @@ function _convertStepToNumberIfNeeded(step: string): string | number {
     }
     return step;
 }
-
-export default resolvePath;
