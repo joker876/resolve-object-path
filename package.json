@@ -1,6 +1,6 @@
 {
   "name": "resolve-object-path",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A TypeScript function that resolves a string path to an object's property.",
   "main": "dist/index.js",
   "files": [
